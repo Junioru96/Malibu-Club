@@ -20,6 +20,38 @@ html {
   max-width: 1200px;
 }
 
+.section-block {
+  position: absolute;
+  height: 100px;
+  width: 150%;
+  background-color: #333;
+}
+
+.section-block-left {
+  bottom: 0;
+  left: -10px;
+  -webkit-clip-path: polygon(0 42%, 100% 100%, 75% 100%, 0% 100%);
+          clip-path: polygon(0 42%, 100% 100%, 75% 100%, 0% 100%);
+}
+
+.section-block-right {
+  top: 0;
+  right: -10px;
+  -webkit-clip-path: polygon(0 42%, 100% 100%, 75% 100%, 0% 100%);
+          clip-path: polygon(0 42%, 100% 100%, 75% 100%, 0% 100%);
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0;
+  }
+  22%, 53% {
+    opacity: 0.5;
+  }
+}
 .header {
   position: relative;
   display: flex;
@@ -42,7 +74,10 @@ html {
 }
 .header__title {
   font-family: "Caveat", "sans-serif";
-  font-size: 5rem;
+  font-size: 6rem;
   color: #F806CC;
   text-shadow: 0 0 5px #F806CC;
+}
+.header__title .neon-text {
+  animation: flicker 3s infinite;
 }/*# sourceMappingURL=styles.css.map */
