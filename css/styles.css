@@ -8,6 +8,7 @@
 
 body {
   background-color: #333;
+  overflow: hidden;
 }
 
 html {
@@ -20,10 +21,14 @@ html {
   max-width: 1200px;
 }
 
+.section {
+  overflow: hidden;
+}
+
 .section-block {
   position: absolute;
   height: 100px;
-  width: 150%;
+  width: 100%;
   background-color: #333;
 }
 
