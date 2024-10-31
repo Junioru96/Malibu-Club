@@ -9,19 +9,11 @@
 	flex-direction: column;
 	align-items: center;
 	height: 80vh;
-	background-image: url('../../img/header-small.jpg');
+	background-image: url('/Malibu-Club/img/header-small.jpg');
 	background-size: cover;
 	background-position: center;
 	z-index: 1;
 
-
-	// img {
-    //     position: absolute;
-	// 	width: 100%;
-	// 	height: 100%;
-    //     object-fit: cover;
-    //     z-index: -1;
-	// }
 
 	&::before {
 		position: absolute;
