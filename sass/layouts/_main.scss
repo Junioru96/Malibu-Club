@@ -1,0 +1,44 @@
+@use '../utilities/colors' as *;
+
+// COMMON
+
+.section-title {
+	margin-bottom: 1.5em;
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	color: $light-purple-color;
+
+	.title-underline {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: '';
+			bottom: 6px;
+			left: 0;
+			width: 140%;
+			height: 1.5px;
+			background-color: $light-purple-color;
+		}
+	}
+}
+
+// ABOUT US
+
+.aboutus {
+	position: relative;
+	&__text {
+		font-size: 1.8rem;
+	}
+
+	img {
+		position: absolute;
+		top: 4%;
+		right: 32%;
+		z-index: -1;
+        height: 17%;
+        opacity: 0.4;
+	}
+}
