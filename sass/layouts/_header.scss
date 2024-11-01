@@ -9,11 +9,11 @@
 	flex-direction: column;
 	align-items: center;
 	height: 80vh;
-	background-image: url('/Malibu-Club/img/header-small.jpg');
+	background-image: url('/../img/header-small.jpg');
 	background-size: cover;
 	background-position: center;
+	text-align: center;
 	z-index: 1;
-
 
 	&::before {
 		position: absolute;
@@ -33,5 +33,14 @@
 		.neon-text {
 			animation: flicker 3s infinite;
 		}
+	}
+
+	&__btn {
+		text-decoration: none;
+		color: #fff;
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 1px;
 	}
 }
