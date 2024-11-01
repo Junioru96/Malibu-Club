@@ -153,4 +153,11 @@ body {
 }
 .link-effect:hover::before {
   height: 110%;
+}
+
+@media (width >= 576px) {
+  .aboutus img {
+    top: 20%;
+    left: 10%;
+  }
 }/*# sourceMappingURL=styles.css.map */
