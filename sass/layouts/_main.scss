@@ -22,6 +22,15 @@
 			height: 1.5px;
 			background-color: $light-purple-color;
 		}
+
+		&::after {
+			position: absolute;
+			content: '???';
+			font-size: 2.3rem;
+			height: 100%;
+			top: -15px;
+			right: 0px;
+		}
 	}
 }
 
@@ -29,16 +38,33 @@
 
 .aboutus {
 	position: relative;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
 	&__text {
 		font-size: 1.8rem;
 	}
+
+	// &__images {
+    //     width: 50%;
+
+	// 	img {
+	// 		width: 30%;
+	// 		height: 40%;
+    //         object-fit: cover;
+	// 	}
+	// }
 
 	img {
 		position: absolute;
 		top: 4%;
 		right: 32%;
 		z-index: -1;
-        height: 17%;
-        opacity: 0.4;
+		height: 17%;
+		opacity: 0.4;
 	}
 }

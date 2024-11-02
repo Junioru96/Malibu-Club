@@ -120,9 +120,22 @@ body {
   height: 1.5px;
   background-color: #f906cc;
 }
+.section-title .title-underline::after {
+  position: absolute;
+  content: "???";
+  font-size: 2.3rem;
+  height: 100%;
+  top: -15px;
+  right: 0px;
+}
 
 .aboutus {
   position: relative;
+}
+.aboutus__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .aboutus__text {
   font-size: 1.8rem;
@@ -159,5 +172,18 @@ body {
   .aboutus img {
     top: 20%;
     left: 10%;
+  }
+}
+@media (width >= 768px) {
+  .aboutus img {
+    height: 48%;
+  }
+}
+@media (width >= 992px) {
+  .header {
+    background-image: url("../../img/header-big.jpg");
+  }
+  .aboutus img {
+    height: 83%;
   }
 }/*# sourceMappingURL=styles.css.map */
