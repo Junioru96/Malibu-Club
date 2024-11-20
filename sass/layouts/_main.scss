@@ -115,7 +115,7 @@
 		border: 2px solid #4d4d4d;
 		border-radius: 15px;
 		text-align: center;
-		transition: box-shadow .3s, border .1s;
+		transition: box-shadow 0.3s, border 0.1s;
 
 		&-icon {
 			position: absolute;
@@ -142,14 +142,47 @@
 // EVENTS
 
 .events {
-	&__container {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+	position: relative;
+
+	&__box {
+		text-align: center;
+		margin: 4em 0;
+
+		&-img {
+			display: block;
+			margin: 0 auto;
+			height: 300px;
+			width: 100%;
+			object-fit: cover;
+		}
+
+		&-title {
+			margin: 1em 0;
+			font-size: 2rem;
+			color: $light-purple-color;
+		}
+
+		&-text {
+			font-size: 1.5rem;
+		}
 	}
 
-	&__img {
-		height: 400px;
+	&__icons {
+		position: absolute;
+		z-index: -1;
+	}
+
+	&__icon-crown {
+		top: 2.7%;
+		left: 4%;
+		width: 10%;
+		opacity: 0.787;
+	}
+
+	&__icon-silhouette {
+		bottom: 13%;
+		width: 56%;
+		left: 30%;
+		opacity: 0.3456;
 	}
 }

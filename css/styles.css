@@ -216,14 +216,44 @@ body {
   box-shadow: 0 0 15px #f906cc;
 }
 
-.events__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.events {
+  position: relative;
 }
-.events__img {
-  height: 400px;
+.events__box {
+  text-align: center;
+  margin: 4em 0;
+}
+.events__box-img {
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.events__box-title {
+  margin: 1em 0;
+  font-size: 2rem;
+  color: #f906cc;
+}
+.events__box-text {
+  font-size: 1.5rem;
+}
+.events__icons {
+  position: absolute;
+  z-index: -1;
+}
+.events__icon-crown {
+  top: 2.7%;
+  left: 4%;
+  width: 10%;
+  opacity: 0.787;
+}
+.events__icon-silhouette {
+  bottom: 13%;
+  width: 56%;
+  left: 30%;
+  opacity: 0.3456;
 }
 
 .link-effect {
@@ -253,6 +283,12 @@ body {
     top: 20%;
     left: 10%;
   }
+  .events__icon-crown {
+    top: 2%;
+  }
+  .events__icon-silhouette {
+    bottom: 7%;
+  }
 }
 @media (width >= 768px) {
   .aboutus__question-mark {
@@ -275,6 +311,35 @@ body {
   .offer__card-two, .offer__card-four, .offer__card-six {
     grid-column: 4/7;
   }
+  .events__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+  .events__box-img {
+    width: 30%;
+    height: 350px;
+  }
+  .events__box-img--right {
+    order: 1;
+  }
+  .events__box-text {
+    width: 60%;
+  }
+  .events__icon-crown {
+    top: 5.5%;
+    left: 4%;
+    width: 6%;
+    opacity: 0.787;
+  }
+  .events__icon-silhouette {
+    bottom: 13%;
+    width: 38%;
+    left: 47%;
+    opacity: 0.3456;
+  }
 }
 @media (width >= 992px) {
   .header {
@@ -285,6 +350,18 @@ body {
   }
   .aboutus__question-mark {
     height: 83%;
+  }
+  .events__icon-crown {
+    top: 6%;
+    left: 3%;
+    width: 6%;
+    opacity: 0.787;
+  }
+  .events__icon-silhouette {
+    bottom: 13%;
+    width: 23%;
+    left: 74%;
+    opacity: 0.3456;
   }
 }
 @media (width >= 1200px) {
@@ -315,5 +392,11 @@ body {
   }
   .offer__card-three, .offer__card-six {
     grid-column: 5/7;
+  }
+  .events__icon-crown {
+    top: 4%;
+    left: 10%;
+    width: 6%;
+    opacity: 0.787;
   }
 }/*# sourceMappingURL=styles.css.map */

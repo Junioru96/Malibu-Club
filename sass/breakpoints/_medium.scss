@@ -8,16 +8,15 @@
 
 		&__slider {
 			width: 80%;
-            height: 40em;
+			height: 40em;
 			margin: 0 auto;
-            border: 5px solid $light-purple-color;
-            border-radius: 15px;
-            box-shadow: 0 0 12px $light-purple-color;
+			border: 5px solid $light-purple-color;
+			border-radius: 15px;
+			box-shadow: 0 0 12px $light-purple-color;
 		}
 	}
 
 	.offer {
-
 		&__card {
 			margin: 1em;
 		}
@@ -32,6 +31,43 @@
 		&__card-four,
 		&__card-six {
 			grid-column: 4/7;
+		}
+	}
+
+	.events {
+		&__box {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			padding: 2em;
+
+			&-img {
+				width: 30%;
+				height: 350px;
+
+				&--right {
+					order: 1;
+				}
+			}
+
+			&-text {
+				width: 60%;
+			}
+		}
+
+		&__icon-crown {
+			top: 5.5%;
+			left: 4%;
+			width: 6%;
+			opacity: 0.787;
+		}
+	
+		&__icon-silhouette {
+			bottom: 13%;
+			width: 38%;
+			left: 47%;
+			opacity: 0.3456;
 		}
 	}
 }

@@ -43,4 +43,13 @@
 			grid-column: 5/7;
 		}
 	}
+
+	.events {
+		&__icon-crown {
+			top: 4%;
+			left: 10%;
+			width: 6%;
+			opacity: 0.787;
+		}
+	}
 }
