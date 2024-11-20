@@ -115,6 +115,7 @@
 		border: 2px solid #4d4d4d;
 		border-radius: 15px;
 		text-align: center;
+		transition: box-shadow .3s, border .1s;
 
 		&-icon {
 			position: absolute;
@@ -129,6 +130,11 @@
 			margin: 0.5em 0;
 			text-transform: uppercase;
 			letter-spacing: 1px;
+		}
+
+		&:hover {
+			border: 2px solid transparent;
+			box-shadow: 0 0 15px $light-purple-color;
 		}
 	}
 }
