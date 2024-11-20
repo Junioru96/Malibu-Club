@@ -7,25 +7,30 @@
 .section {
 	position: relative;
 	padding: 4em 2em;
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .section-block {
 	position: absolute;
 	height: 100px;
-	width: 100%;
-	background-color: #333;
+	width: 110%;
+	background-image: url('/img/tactile_noise.webp');
+	z-index: 999;
 }
 
-.section-block-left {
+.section-block-bottom {
 	bottom: 0;
 	left: -10px;
-	clip-path: polygon(0 42%, 100% 100%, 75% 100%, 0% 100%);
-	// clip-path: polygon(0 0, 100% 100%, 75% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 100%, 100% 100%, 0 100%);
 }
-.section-block-right {
-	top: 0;
+.section-block-top {
+	top: -2px;
 	right: -10px;
-	clip-path: polygon(0 42%, 100% 100%, 75% 100%, 0% 100%);
-	// clip-path: polygon(0 0, 100% 100%, 75% 100%, 0% 100%);
+	clip-path: polygon(0 100%, 0 100%, 100% 0, 0 0);
+}
+
+.section-block-bottom-reverse {
+	bottom: 0;
+	right: -10px;
+	clip-path: polygon(0 100%, 0 100%, 100% 0, 100% 100%);
 }

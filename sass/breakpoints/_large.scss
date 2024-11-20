@@ -29,4 +29,15 @@
 			opacity: 0.3456;
 		}
 	}
+
+	.party {
+
+		.background-clip-sd {
+			display: none;
+		}
+
+		.background-clip-hd {
+			display: block;
+		}
+	}
 }
