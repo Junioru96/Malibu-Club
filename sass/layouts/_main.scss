@@ -3,7 +3,7 @@
 // COMMON
 
 .section-title {
-	margin-bottom: 1.5em;
+	margin-bottom: 0.5em;
 	font-size: 3.5rem;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -18,10 +18,14 @@
 			content: '';
 			bottom: 6px;
 			left: 0;
-			width: 140%;
+			width: 120%;
 			height: 1.5px;
 			background-color: $light-purple-color;
 		}
+	}
+
+	.title-underline-marks {
+		position: relative;
 
 		&::after {
 			position: absolute;
@@ -39,19 +43,55 @@
 .aboutus {
 	position: relative;
 
-	
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
 
 	&__text {
+		padding: 1em;
 		font-size: 1.8rem;
+	}
+
+	&__slider {
+		position: relative;
+		width: 100%;
+		height: 20em;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.slide {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+		}
+
+		.fade {
+			opacity: 0; /* Initially hide all slides */
+		}
+
+		.active {
+			opacity: 1; /* Show the active slide */
+		}
 	}
 
 	&__question-mark {
 		position: absolute;
-		top: 4%;
+		top: 27%;
 		right: 32%;
 		z-index: -1;
-		height: 17%;
-		opacity: 0.3;
+		height: 13%;
+		opacity: 0.287;
+		transform: rotate(15deg);
 	}
+}
 
+.offer {
+	position: relative;
 }

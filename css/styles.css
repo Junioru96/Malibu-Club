@@ -35,7 +35,7 @@ body {
 
 .section {
   position: relative;
-  padding: 2em 4em;
+  padding: 4em 2em;
   overflow: hidden;
 }
 
@@ -101,7 +101,7 @@ body {
 }
 
 .section-title {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -116,11 +116,14 @@ body {
   content: "";
   bottom: 6px;
   left: 0;
-  width: 140%;
+  width: 120%;
   height: 1.5px;
   background-color: #f906cc;
 }
-.section-title .title-underline::after {
+.section-title .title-underline-marks {
+  position: relative;
+}
+.section-title .title-underline-marks::after {
   position: absolute;
   content: "??";
   font-size: 2.3rem;
@@ -132,16 +135,49 @@ body {
 .aboutus {
   position: relative;
 }
+.aboutus__container {
+  display: flex;
+  flex-direction: column;
+}
 .aboutus__text {
+  padding: 1em;
   font-size: 1.8rem;
+}
+.aboutus__slider {
+  position: relative;
+  width: 100%;
+  height: 20em;
+  overflow: hidden;
+}
+.aboutus__slider img {
+  width: 100%;
+  height: 100%;
+}
+.aboutus__slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.aboutus__slider .fade {
+  opacity: 0; /* Initially hide all slides */
+}
+.aboutus__slider .active {
+  opacity: 1; /* Show the active slide */
 }
 .aboutus__question-mark {
   position: absolute;
-  top: 4%;
+  top: 27%;
   right: 32%;
   z-index: -1;
-  height: 17%;
-  opacity: 0.3;
+  height: 13%;
+  opacity: 0.287;
+  transform: rotate(15deg);
+}
+
+.offer {
+  position: relative;
 }
 
 .link-effect {
@@ -164,6 +200,9 @@ body {
 }
 
 @media (width >= 576px) {
+  .aboutus__slider {
+    height: 30em;
+  }
   .aboutus__question-mark {
     top: 20%;
     left: 10%;
@@ -173,10 +212,39 @@ body {
   .aboutus__question-mark {
     height: 48%;
   }
+  .aboutus__slider {
+    width: 80%;
+    height: 40em;
+    margin: 0 auto;
+    border: 5px solid #f906cc;
+    border-radius: 15px;
+    box-shadow: 0 0 12px #f906cc;
+  }
 }
 @media (width >= 992px) {
   .header {
-    background-image: url("../../img/header-big.jpg");
+    background-image: url("../img/header-big.jpg");
+  }
+  .aboutus__slider {
+    height: 42em;
+  }
+  .aboutus__question-mark {
+    height: 83%;
+  }
+}
+@media (width >= 1200px) {
+  .aboutus__container {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutus__text {
+    padding: 3em;
+    width: 50%;
+  }
+  .aboutus__slider {
+    width: 40%;
+    height: 35em;
   }
   .aboutus__question-mark {
     height: 83%;

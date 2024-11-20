@@ -1,10 +1,17 @@
+@use '../utilities/colors' as *;
+
 @media (width >= 992px) {
-    .header {
-        background-image: url('../img/header-big.jpg');
-    }
-    .aboutus {
-        &__question-mark {
-            height: 83%;
+	.header {
+		background-image: url('../img/header-big.jpg');
+	}
+	.aboutus {
+
+        &__slider {
+            height: 42em;
         }
-    }
+
+		&__question-mark {
+			height: 83%;
+		}
+	}
 }

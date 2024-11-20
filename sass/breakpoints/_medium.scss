@@ -1,7 +1,18 @@
+@use '../utilities/colors' as *;
+
 @media (width >= 768px) {
-    .aboutus {
-        &__question-mark {
-            height: 48%;
-        }
-    }
+	.aboutus {
+		&__question-mark {
+			height: 48%;
+		}
+
+		&__slider {
+			width: 80%;
+            height: 40em;
+			margin: 0 auto;
+            border: 5px solid $light-purple-color;
+            border-radius: 15px;
+            box-shadow: 0 0 12px $light-purple-color;
+		}
+	}
 }
