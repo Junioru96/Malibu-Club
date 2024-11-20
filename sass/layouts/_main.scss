@@ -92,6 +92,58 @@
 	}
 }
 
+// OFFER
+
 .offer {
 	position: relative;
+
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	&__card {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		grid-column: 1/7;
+		padding: 0.5em 1em;
+		margin: 1em 0;
+		font-size: 1.8rem;
+		border: 2px solid #4d4d4d;
+		border-radius: 15px;
+		text-align: center;
+
+		&-icon {
+			position: absolute;
+			top: -15px;
+			background-color: #333;
+			padding: 0 1em;
+			font-size: 2.5rem;
+			color: $light-purple-color;
+		}
+
+		&-title {
+			margin: 0.5em 0;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+// EVENTS
+
+.events {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__img {
+		height: 400px;
+	}
 }

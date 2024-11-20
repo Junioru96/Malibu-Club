@@ -15,4 +15,23 @@
             box-shadow: 0 0 12px $light-purple-color;
 		}
 	}
+
+	.offer {
+
+		&__card {
+			margin: 1em;
+		}
+
+		&__card-one,
+		&__card-three,
+		&__card-five {
+			grid-column: 1/4;
+		}
+
+		&__card-two,
+		&__card-four,
+		&__card-six {
+			grid-column: 4/7;
+		}
+	}
 }
