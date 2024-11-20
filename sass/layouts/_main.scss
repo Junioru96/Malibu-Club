@@ -25,11 +25,11 @@
 
 		&::after {
 			position: absolute;
-			content: '???';
+			content: '??';
 			font-size: 2.3rem;
 			height: 100%;
-			top: -15px;
-			right: 0px;
+			bottom: -10px;
+			right: -23px;
 		}
 	}
 }
@@ -39,32 +39,19 @@
 .aboutus {
 	position: relative;
 
-    &__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+	
 
 	&__text {
 		font-size: 1.8rem;
 	}
 
-	// &__images {
-    //     width: 50%;
-
-	// 	img {
-	// 		width: 30%;
-	// 		height: 40%;
-    //         object-fit: cover;
-	// 	}
-	// }
-
-	img {
+	&__question-mark {
 		position: absolute;
 		top: 4%;
 		right: 32%;
 		z-index: -1;
 		height: 17%;
-		opacity: 0.4;
+		opacity: 0.3;
 	}
+
 }

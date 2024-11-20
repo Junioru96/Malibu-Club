@@ -67,7 +67,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 80vh;
-  background-image: url("/../img/header-small.jpg");
+  background-image: url("../img/header-small.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -122,31 +122,26 @@ body {
 }
 .section-title .title-underline::after {
   position: absolute;
-  content: "???";
+  content: "??";
   font-size: 2.3rem;
   height: 100%;
-  top: -15px;
-  right: 0px;
+  bottom: -10px;
+  right: -23px;
 }
 
 .aboutus {
   position: relative;
 }
-.aboutus__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .aboutus__text {
   font-size: 1.8rem;
 }
-.aboutus img {
+.aboutus__question-mark {
   position: absolute;
   top: 4%;
   right: 32%;
   z-index: -1;
   height: 17%;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .link-effect {
@@ -169,13 +164,13 @@ body {
 }
 
 @media (width >= 576px) {
-  .aboutus img {
+  .aboutus__question-mark {
     top: 20%;
     left: 10%;
   }
 }
 @media (width >= 768px) {
-  .aboutus img {
+  .aboutus__question-mark {
     height: 48%;
   }
 }
@@ -183,7 +178,7 @@ body {
   .header {
     background-image: url("../../img/header-big.jpg");
   }
-  .aboutus img {
+  .aboutus__question-mark {
     height: 83%;
   }
 }/*# sourceMappingURL=styles.css.map */
