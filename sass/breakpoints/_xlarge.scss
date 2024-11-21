@@ -1,29 +1,7 @@
 @use '../utilities/colors' as *;
 
 @media (width >= 1200px) {
-	.aboutus {
-		&__container {
-			flex-direction: row-reverse;
-			justify-content: center;
-			align-items: center;
-		}
-		&__text {
-			padding: 3em;
-			width: 50%;
-		}
-
-		&__slider {
-			width: 40%;
-			height: 35em;
-		}
-
-		&__question-mark {
-			height: 83%;
-		}
-	}
-
 	.offer {
-
 		&__card {
 			margin: 2em;
 		}

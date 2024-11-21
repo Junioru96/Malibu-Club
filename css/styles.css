@@ -62,7 +62,7 @@ body {
 }
 
 .section-block-bottom-reverse {
-  bottom: 0;
+  bottom: -2px;
   right: -10px;
   -webkit-clip-path: polygon(0 100%, 0 100%, 100% 0, 100% 100%);
           clip-path: polygon(0 100%, 0 100%, 100% 0, 100% 100%);
@@ -74,7 +74,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
   background-image: url("../img/header-small.jpg");
   background-size: cover;
   background-position: center;
@@ -143,36 +143,9 @@ body {
 .aboutus {
   position: relative;
 }
-.aboutus__container {
-  display: flex;
-  flex-direction: column;
-}
 .aboutus__text {
   padding: 1em;
   font-size: 1.8rem;
-}
-.aboutus__slider {
-  position: relative;
-  width: 100%;
-  height: 20em;
-  overflow: hidden;
-}
-.aboutus__slider img {
-  width: 100%;
-  height: 100%;
-}
-.aboutus__slider .slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-.aboutus__slider .fade {
-  opacity: 0; /* Initially hide all slides */
-}
-.aboutus__slider .active {
-  opacity: 1; /* Show the active slide */
 }
 .aboutus__question-mark {
   position: absolute;
@@ -294,19 +267,13 @@ body {
   cursor: pointer;
   z-index: 1;
 }
-.party::before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
 .party .party-text:hover {
   text-shadow: 0 0 15px #f906cc;
 }
-.party .party-text:hover ~ .party::before {
-  background-color: rgba(0, 0, 0, 0.8);
+
+.your-offer__text {
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 .link-effect {
@@ -329,9 +296,6 @@ body {
 }
 
 @media (width >= 576px) {
-  .aboutus__slider {
-    height: 30em;
-  }
   .aboutus__question-mark {
     top: 20%;
     left: 10%;
@@ -346,14 +310,6 @@ body {
 @media (width >= 768px) {
   .aboutus__question-mark {
     height: 48%;
-  }
-  .aboutus__slider {
-    width: 80%;
-    height: 40em;
-    margin: 0 auto;
-    border: 5px solid #f906cc;
-    border-radius: 15px;
-    box-shadow: 0 0 12px #f906cc;
   }
   .offer__card {
     margin: 1em;
@@ -398,48 +354,31 @@ body {
   .header {
     background-image: url("../img/header-big.jpg");
   }
-  .aboutus__slider {
-    height: 42em;
-  }
   .aboutus__question-mark {
     height: 83%;
-  }
-  .events__icon-crown {
-    top: 6%;
-    left: 3%;
-    width: 6%;
-    opacity: 0.787;
-  }
-  .events__icon-silhouette {
-    bottom: 13%;
-    width: 23%;
-    left: 74%;
-    opacity: 0.3456;
-  }
-  .party .background-clip-sd {
-    display: none;
-  }
-  .party .background-clip-hd {
-    display: block;
   }
 }
+.events__icon-crown {
+  top: 6%;
+  left: 3%;
+  width: 6%;
+  opacity: 0.787;
+}
+.events__icon-silhouette {
+  bottom: 13%;
+  width: 23%;
+  left: 74%;
+  opacity: 0.3456;
+}
+
+.party .background-clip-sd {
+  display: none;
+}
+.party .background-clip-hd {
+  display: block;
+}
+
 @media (width >= 1200px) {
-  .aboutus__container {
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  .aboutus__text {
-    padding: 3em;
-    width: 50%;
-  }
-  .aboutus__slider {
-    width: 40%;
-    height: 35em;
-  }
-  .aboutus__question-mark {
-    height: 83%;
-  }
   .offer__card {
     margin: 2em;
   }

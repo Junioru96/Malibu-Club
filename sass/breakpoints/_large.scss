@@ -4,40 +4,36 @@
 	.header {
 		background-image: url('../img/header-big.jpg');
 	}
-	.aboutus {
-		&__slider {
-			height: 42em;
-		}
 
+	.aboutus {
 		&__question-mark {
 			height: 83%;
 		}
 	}
+}
 
-	.events {
-		&__icon-crown {
-			top: 6%;
-			left: 3%;
-			width: 6%;
-			opacity: 0.787;
-		}
-
-		&__icon-silhouette {
-			bottom: 13%;
-			width: 23%;
-			left: 74%;
-			opacity: 0.3456;
-		}
+.events {
+	&__icon-crown {
+		top: 6%;
+		left: 3%;
+		width: 6%;
+		opacity: 0.787;
 	}
 
-	.party {
+	&__icon-silhouette {
+		bottom: 13%;
+		width: 23%;
+		left: 74%;
+		opacity: 0.3456;
+	}
+}
 
-		.background-clip-sd {
-			display: none;
-		}
+.party {
+	.background-clip-sd {
+		display: none;
+	}
 
-		.background-clip-hd {
-			display: block;
-		}
+	.background-clip-hd {
+		display: block;
 	}
 }

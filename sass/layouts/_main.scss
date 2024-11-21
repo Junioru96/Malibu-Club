@@ -44,42 +44,10 @@
 .aboutus {
 	position: relative;
 
-	&__container {
-		display: flex;
-		flex-direction: column;
-	}
 
 	&__text {
 		padding: 1em;
 		font-size: 1.8rem;
-	}
-
-	&__slider {
-		position: relative;
-		width: 100%;
-		height: 20em;
-		overflow: hidden;
-
-		img {
-			width: 100%;
-			height: 100%;
-		}
-
-		.slide {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			opacity: 0;
-			transition: opacity 1s ease-in-out;
-		}
-
-		.fade {
-			opacity: 0; /* Initially hide all slides */
-		}
-
-		.active {
-			opacity: 1; /* Show the active slide */
-		}
 	}
 
 	&__question-mark {
@@ -222,21 +190,16 @@
 		z-index: 1;
 	}
 
-	&::before {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		content: '';
-		background-color: rgba(0, 0, 0, 0.4);
-		z-index: 1;
-	}
-
 	.party-text:hover {
 		text-shadow: 0 0 15px $light-purple-color;
-
 	}
+}
 
-	.party-text:hover ~ .party::before {
-		background-color: rgba(0,0,0,0.8);
+// YOUR OFFER
+
+.your-offer {
+	&__text {
+		text-align: center;
+		font-size: 1.8rem;
 	}
 }
