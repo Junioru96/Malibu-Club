@@ -43,7 +43,7 @@ body {
   position: absolute;
   height: 100px;
   width: 110%;
-  background-image: url("../img/tactile_noise.png");
+  background-image: url("../img/tactile_noise.jpg");
   z-index: 999;
 }
 
@@ -182,7 +182,7 @@ body {
 .offer__card-icon {
   position: absolute;
   top: -15px;
-  background-image: url("../img/tactile_noise.png");
+  background-image: url("../img/tactile_noise.jpg");
   padding: 0 1em;
   font-size: 2.5rem;
   color: #f906cc;
