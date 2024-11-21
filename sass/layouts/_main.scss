@@ -44,7 +44,6 @@
 .aboutus {
 	position: relative;
 
-
 	&__text {
 		padding: 1em;
 		font-size: 1.8rem;
@@ -114,6 +113,8 @@
 	position: relative;
 
 	&__box {
+		display: flex;
+		flex-direction: column;
 		text-align: center;
 		margin: 4em 0;
 
@@ -123,6 +124,8 @@
 			height: 300px;
 			width: 100%;
 			object-fit: cover;
+			border-radius: 15px;
+			border: 2px solid #4d4d4d;
 		}
 
 		&-title {
@@ -195,11 +198,39 @@
 	}
 }
 
-// YOUR OFFER
+// REVIEWS
 
-.your-offer {
-	&__text {
-		text-align: center;
-		font-size: 1.8rem;
+.reviews {
+
+	&__container {
+		padding: 2em 0;
+	}
+	&__box {
+		position: relative;
+		margin: 2em;
+		padding: 2em;
+		height: 120px;
+		border: 2px solid #4d4d4d;
+		border-radius: 15px;
+		font-size: 1.4rem;
+
+		&-img {
+			position: absolute;
+			top: 8%;
+			left: 80%;
+			transform: translate(-50%, -50%);
+
+			img {
+				width: 65px;
+				height: 65px;
+				object-fit: cover;
+				border-radius: 50%;
+			}
+		}
+
+		&-text {
+			margin: 0.5em 0;
+		}
+
 	}
 }
